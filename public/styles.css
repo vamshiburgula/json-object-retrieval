@@ -1,0 +1,38 @@
+/* styles.css */
+
+/* CSS for moving balls and background */
+body {
+    background-color: #2d3748 !important;
+    color: #e2e8f0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    animation: moveBall linear infinite alternate;
+    box-shadow: 0px 0px 30px 20px rgba(255, 204, 102, 0.5);
+}
+
+.ball1 {
+    top: 20px;
+    left: 20px;
+    background-color: #ff9966;
+    animation-duration: 3s;
+}
+
+.ball2 {
+    bottom: 20px;
+    right: 20px;
+    background-color: #66cc99;
+    animation-duration: 4s;
+}
+
+@keyframes moveBall {
+    to {
+        transform: translateX(150px);
+    }
+}
